@@ -20,17 +20,18 @@ const PlayerList = () => {                                                      
     return (
         <>
         <h2>Super cool players</h2>
+        <section>
         {
-            allPlayersList.map((singlePlayer) => {                                       //16.) testing by throwing it on the page finally - we HAVE to use .MAP on on array though to narrow it down
-              console.log(allPlayersList)
-              return( <div key ={singlePlayer.name}>                                     {/*17.) created/returning a div so we can append our super sick array - added KEY to it  after i tested it*/}
+            allPlayersList.map((singlePlayer) => {                                          //16.) testing by throwing it on the page finally - we HAVE to use .MAP on on array though to narrow it down
+              return( <div className="cards" key ={singlePlayer.name}>                     {/*17.) created/returning a div so we can append our super sick array - added KEY to it  after i tested it*/}
                       <h3>{singlePlayer.name}</h3>
-                      <img src={allPlayersList.imageUrl}></img>
-                      <p>{allPlayersList.status}</p>
-                      <p>{allPlayersList.breed}</p>
+                      <img src={singlePlayer.imageUrl}></img>
+                      <p>{singlePlayer.status}</p>
+                      <p>{singlePlayer.breed}</p>
                       </div>           
               )          
-            })}                                                                   
+            })}  
+        </section>                                                                 
         </>
     )
 }

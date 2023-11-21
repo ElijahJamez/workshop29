@@ -7,8 +7,8 @@ import { useState } from 'react';                                  //6.) impoted
 
 const App = () => {
 
-const [players, setPlayers] = useState([]);                        //1.) made state thats going to hold all of the players in the API - we have to leave this empty so it can be filled up by said API easily
-const [singlePlayer, setSinglePlayer] = useState([null])           //2.) made a state that will hold an individual player that the user chose - we pass it "null" (falsy) which basically = "nothing is selected right now" - its becuase this is somthing the user might not always want like if they ~dont~ want more details
+
+// const [singlePlayer, setSinglePlayer] = useState([null])           //2.) made a state that will hold an individual player that the user chose - we pass it "null" (falsy) which basically = "nothing is selected right now" - its becuase this is somthing the user might not always want like if they ~dont~ want more details
 
 
 
